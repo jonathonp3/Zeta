@@ -60,4 +60,18 @@ modules:
         
     user: {} # Also add Flathub user repo, but no user packages
 
+      - type: fonts
+        fonts:
+        google-fonts:
+        - Lato
+        - Merriweather
+        - Montserrat
+        - Oswald
+        - Open Sans
+        - PT Sans
+        - Raleway
+        - Roboto
+        - Slabo
+        - Source Sans 3
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
