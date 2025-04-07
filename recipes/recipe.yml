@@ -57,6 +57,18 @@ modules:
         - org.gnome.Rhythmbox3 # Rhythmbox
         - org.signal.Signal # Signal Desktop
         - org.telegram.desktop # Telegram Desktop
+  
+  - type: systemd
+    system: 
+      enabled:
+        - smb.service
+        - nfs-server.service
+        - rpcbind.service
+        - sshd.service
+        
+    user:
+      enabled:
+        - syncthing.service
         
     user: {} # Also add Flathub user repo, but no user packages
 
