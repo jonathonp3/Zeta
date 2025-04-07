@@ -42,14 +42,18 @@ modules:
     system:
       # If no repo information is specified, Flathub will be used by default
       install:
+        - com.discordapp.Discord # Discord - Messaging, voice and video client
+        - com.github.tchx84.Flatseal # Flatseal
         - com.github.rafostar.Clapper # Clapper
         - com.google.Chrome # Google CHrome
         - com.spotify.Client # Spotify Desktop
         - io.bassi.Amberol # Amberol Music Player
+        - it.mijorus.gearlever # Gear Lever Manage AppImages
         - org.gimp.GIMP # GNU Image Create images and edit photographs
         - org.freac.freac # fre:ac Audio converter and CD ripper
         - org.keepassxc.KeePassXC # KeePassXC
         - org.gnome.Evolution # Evolution
+        - org.gnome.gThumb # gThumb Image Viewer
         - org.gnome.Rhythmbox3 # Rhythmbox
         - org.signal.Signal # Signal Desktop
         - org.telegram.desktop # Telegram Desktop
