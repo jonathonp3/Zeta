@@ -19,7 +19,7 @@ modules:
 
   - type: rpm-ostree
     repos:
-      - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+      # https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     install:
       - firefox
       - gedit
@@ -30,7 +30,6 @@ modules:
       - samba-client
       - simple-scan
       - yt-dlp
-      
       - libvirt-daemon-config-network
       - libvirt-daemon-kvm qemu-kvm
       - virt-install
