@@ -60,9 +60,9 @@ modules:
         
     user: {} # Also add Flathub user repo, but no user packages
 
-      - type: fonts
-        fonts:
-        google-fonts:
+  - type: fonts
+    fonts:
+      google-fonts:
         - Lato
         - Merriweather
         - Montserrat
