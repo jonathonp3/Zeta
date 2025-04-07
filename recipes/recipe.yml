@@ -21,15 +21,38 @@ modules:
     repos:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
     install:
+      - firefox
       - gedit
+      - gparted
+      - libreoffice
       - pluma
+      - samba
+      - samba-client
+      - simple-scan
+      - yt-dlp
+      
+      - libvirt-daemon-config-network
+      - libvirt-daemon-kvm qemu-kvm
+      - virt-install
+      - virt-manager
+      - virt-viewer
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
       # If no repo information is specified, Flathub will be used by default
       install:
-        - org.mozilla.firefox
+        - com.github.rafostar.Clapper # Clapper
+        - com.google.Chrome # Google CHrome
+        - com.spotify.Client # Spotify Desktop
+        - io.bassi.Amberol # Amberol Music Player
+        - org.gimp.GIMP # GNU Image Create images and edit photographs
+        - org.freac.freac # fre:ac Audio converter and CD ripper
+        - org.keepassxc.KeePassXC # KeePassXC
+        - org.gnome.Evolution # Evolution
+        - org.gnome.Rhythmbox3 # Rhythmbox
+        - org.signal.Signal # Signal Desktop
+        - org.telegram.desktop # Telegram Desktop
         
     user: {} # Also add Flathub user repo, but no user packages
 
