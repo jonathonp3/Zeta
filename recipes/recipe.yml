@@ -68,7 +68,9 @@ modules:
         - com.github.tchx84.Flatseal # Flatseal
         - com.github.rafostar.Clapper # Clapper
         - com.google.Chrome # Google CHrome
+        - com.mojang.Minecraft # Minecraft
         - com.spotify.Client # Spotify Desktop
+        - com.surfshark.Surfshark # Connect to secure, private web!
         - io.bassi.Amberol # Amberol Music Player
         - it.mijorus.gearlever # Gear Lever Manage AppImages
         - org.gimp.GIMP # GNU Image Create images and edit photographs
@@ -85,9 +87,10 @@ modules:
   - type: systemd
     system: 
       enabled:
-        - smb.service
+        - libvirtd.service
         - nfs-server.service
         - rpcbind.service
+        - smb.service
         - sshd.service
         
     user: {} # Also add Flathub user repo, but no user packages
